@@ -1,4 +1,4 @@
-# Redis-sentinel-for-docker-compose
+# Redis-sentinel-with-docker-compose
 redis-sentinel ha deploy using docker-compose, the example deploy the basic model: 1 master, 2 slave, 3 sentinel  
 
 ![这里随便写文字](https://imgkr.cn-bj.ufileos.com/6145772a-0cfd-4760-8edf-450d2f1bd405.png)
