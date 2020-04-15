@@ -9,12 +9,14 @@ redis-sentinel ha deploy using docker-compose with `bridge mode`, the example de
 The redis-sentinel ha deploy is progressive， please deploy master/slave first, then  deploy redis sentinel with the master/slave bridge network, So the sentinels can communicate with all the redis master/slave nodes.
 
 ## redis client apps
- - deploy in the same  bridge network 
+ 1. deploy in the same  bridge network 
    : The  redis client apps can link the same above  docker bridge network that can access the whole redis-sentinel
- - deploy independent 
+ 2.  deploy independent 
   > Sentinel, Docker, or other forms of Network Address Translation or Port Mapping should be mixed with care, The Docker offical provider a  [force announce] 
-   : please force announce  the redis-sentinel node ip and  port with the machine Ip and bind port （not the above  master container ip and cotainer expose ip）
-   ：The example show the redis container mapping 6380、6381、6382、26379、26380、26381 port
+  
+  please force announce  the redis-sentinel node ip and  port with the machine Ip and bind port （not the above  master container ip and cotainer expose ip）  
+  
+  The example show the redis container mapping 6380、6381、6382、26379、26380、26381 port
 
    
 ## tip
